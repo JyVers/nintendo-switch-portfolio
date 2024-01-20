@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "PrimeTime";
+    src: url(primetime.ttf) format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: #EBEBEB;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 10vh;
+    align-items: center;
+}
+
+header img{
+    height: 10vh;
+    border-radius: 50px;
+    border: solid 3px #fff;
+}
+
+header p{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #2B2B2B;
+}
+
+main{
+    display: flex;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    gap: 3em;
+    padding: 0 15vh;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+main h5{
+    font-family: 'PrimeTime';
+    font-size: 2em;
+    opacity: 0;
+    color: #2B2B2B;
+    transform: translateY(15px);
+    transition: 0.3s ease-in-out;
+}
+
+main p{
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    visibility: hidden;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+    transform: translateY(25px);
+}
+
+.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+main img{
+    height: 50vh;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+main .hover{
+    transform: scale(1.03);
+}
+
+footer .social{
+    display: flex;
+    margin-top: 3em;
+    justify-content: center;
+    gap: 2em;
+}
+
+
+footer svg{
+    height: 4vh;
+}
+
+footer span{
+    background-color: #fff;
+    display: block;
+    height: 4vh;
+    width: 4vh;
+    padding: 1em;
+    border-radius: 100%;
+
+}
+
+.nintendo{
+    font-family: 'Montserrat';
+    color: #909090;
+    font-size: .8em;
+    text-align: center;
+    
+    margin-top: 2vh;
+}
+
+#profile{
+    cursor: pointer;
+}
